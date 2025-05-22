@@ -6,11 +6,9 @@ A fast, concurrent file system traversal utility written in Go.
 
 `pfind` is a command-line tool that recursively lists all files and directories starting from a specified root directory. It uses Go's concurrency features and a worker pool to efficiently traverse large directory structures in parallel.
 
-## Features
+## Concurrency feature
 
-- Fast parallel directory traversal
-- Uses a worker pool to limit concurrency
-- Simple command-line interface
+On my 8 core laptop with a Samsung 980 PRO SSD, achieves a greater than 5x speed-up for a directory hierarchy of 2 million files. (5.8 seconds versus 36)
 
 ## Installation
 
